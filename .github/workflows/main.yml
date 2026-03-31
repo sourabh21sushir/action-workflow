@@ -1,0 +1,14 @@
+name: "hello world workflow"  
+
+on:
+  push:
+    branches:
+      -master
+      -production
+
+jobs:
+  hello_world:
+    runs-on: self-hosted
+    steps:
+      - name: "hello world"
+        run: echo"hello_world"
